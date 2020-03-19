@@ -9,4 +9,24 @@ import Button from './Button';
 storiesOf('Button', module)
   .addDecorator(ViewDecorator)
   .addDecorator(ThemeDecorator)
-  .add('default', () => <Button onPress={action('onPress')}>Press me</Button>);
+  .add('default', () => <Button onPress={action('onPress')}>Press me</Button>)
+  .add('primary', () => (
+    <Button color="primary" onPress={action('onPress')}>
+      Press me
+    </Button>
+  ))
+  .add('secondary', () => (
+    <Button color="secondary" onPress={action('onPress')}>
+      Press me
+    </Button>
+  ))
+  .add('primary-reverse', () => (
+    <Button color="primary-reverse" onPress={action('onPress')}>
+      Press me
+    </Button>
+  ))
+  .add('link', () => (
+    <Button color="link" onPress={action('onPress')}>
+      Press me
+    </Button>
+  ));

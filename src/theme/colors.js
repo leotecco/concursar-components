@@ -7,6 +7,11 @@ const colors = {
   },
   black: '#000',
   white: '#fff',
+  pink: '#E93959',
+  yellow: '#F1B03F',
+  blue: '#3CACC8',
+  purple: '#4043C3',
+  green: '#6AD416',
 };
 
 export default colors;
